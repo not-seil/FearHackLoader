@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="nfgCCkaLolkFLfqQTWBYRzhlIsjHA" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:FearCheat" Title="Fear Cheat" Height="370" Width="676" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" xmlns:global="clr-namespace:" Loaded="method_0">
+  <Grid>
+    <Panel.Background>
+      <ImageBrush ImageSource="Resources/Images/Background.png" />
+    </Panel.Background>
+    <Rectangle Name="Frame" Fill="#4C000000" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="676" MouseDown="rectangle_1_MouseDown" />
+    <Label Content="FEARCHEAT" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top" Width="140" Foreground="#FFFFFFFF" FontFamily="/FearCheat;component/Resources/Fonts/#Gotham Pro" FontSize="14" Background="{x:Null}" />
+    <Image Name="IconClose" HorizontalAlignment="Right" Height="17" Margin="0,18,18,0" VerticalAlignment="Top" Width="17" Source="Resources/Images/Icon close.png" MouseDown="image_0_MouseDown" />
+    <Image Name="IconHide" HorizontalAlignment="Right" Height="17" Margin="0,18,48,0" VerticalAlignment="Top" Width="17" Source="Resources/Images/Icon hide.png" MouseDown="image_1_MouseDown" />
+    <Label Content="LAUNCHER ACTIVATION" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" FontFamily="/FearCheat;component/Resources/Fonts/#Gotham Pro Medium" FontSize="22" Foreground="#FFFFFFFF" Background="{x:Null}" />
+    <Rectangle Name="TextboxKeyBackground" Fill="#4C000000" HorizontalAlignment="Center" Height="45" VerticalAlignment="Top" Width="362" Margin="0,164,0,0" MouseDown="rectangle_1_MouseDown" />
+    <TextBox Name="TextboxKey" HorizontalAlignment="Center" Height="45" Margin="0,164,0,0" VerticalAlignment="Top" Width="362" CaretBrush="#FFFFFFFF" SelectionBrush="#FF7B0603" Foreground="#FFFFFFFF" FontFamily="/FearCheat;component/Resources/Fonts/#Gotham Pro" FontSize="14" VerticalContentAlignment="Center" Padding="8,0" Background="{x:Null}" BorderBrush="{x:Null}">
+      <FrameworkElement.Style>
+        <Style BasedOn="{StaticResource {x:Type TextBox}}" TargetType="{x:Type TextBox}">
+          <Setter Property="Template">
+            <Setter.Value>
+              <ControlTemplate TargetType="{x:Type TextBox}">
+                <Border Name="Bd" BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="{TemplateBinding Control.BorderThickness}" Background="{TemplateBinding Control.Background}" SnapsToDevicePixels="True">
+                  <ScrollViewer Name="PART_ContentHost" SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+                </Border>
+                <ControlTemplate.Triggers>
+                  <Trigger Property="IsEnabled" Value="False">
+                    <Setter TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Property="Border.Background" />
+                    <Setter Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" Property="Foreground" />
+                  </Trigger>
+                </ControlTemplate.Triggers>
+              </ControlTemplate>
+            </Setter.Value>
+          </Setter>
+        </Style>
+      </FrameworkElement.Style>
+    </TextBox>
+    <Label Name="ActivationText" Content="ПРОВЕРКА КЛЮЧА..." HorizontalAlignment="Left" Margin="157,136,0,0" VerticalAlignment="Top" FontFamily="/FearCheat;component/Resources/Fonts/#Gotham Pro Medium" FontSize="14" Foreground="#FFFFFFFF" Width="362" Padding="0,5" Background="{x:Null}" />
+    <Image Name="ButtonActivate" HorizontalAlignment="Center" Height="45" Margin="0,235,0,0" VerticalAlignment="Top" Width="181" Source="Resources/Images/Button activate.png" IsEnabled="False" MouseDown="image_2_MouseDown" />
+  </Grid>
+</Window>

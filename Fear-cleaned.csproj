@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>FearCheat</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>net461</TargetFramework>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="resources\images\background.png" />
+    <None Remove="resources\fonts\gothampro-20medium.ttf" />
+    <None Remove="resources\fonts\gothampro.ttf" />
+    <None Remove="resources\images\button-20launch.png" />
+    <None Remove="resources\images\icon-20close.png" />
+    <None Remove="resources\fonts\gothampro-20black.ttf" />
+    <None Remove="resources\images\button-20download.png" />
+    <None Remove="resources\images\button-20activate.png" />
+    <None Remove="icon.ico" />
+    <None Remove="resources\images\icon-20hide.png" />
+    <EmbeddedResource Include="resources\images\background.png" LogicalName="resources/images/background.png" />
+    <EmbeddedResource Include="resources\fonts\gothampro-20medium.ttf" LogicalName="resources/fonts/gothampro%20medium.ttf" />
+    <EmbeddedResource Include="resources\fonts\gothampro.ttf" LogicalName="resources/fonts/gothampro.ttf" />
+    <EmbeddedResource Include="resources\images\button-20launch.png" LogicalName="resources/images/button%20launch.png" />
+    <EmbeddedResource Include="resources\images\icon-20close.png" LogicalName="resources/images/icon%20close.png" />
+    <EmbeddedResource Include="resources\fonts\gothampro-20black.ttf" LogicalName="resources/fonts/gothampro%20black.ttf" />
+    <EmbeddedResource Include="resources\images\button-20download.png" LogicalName="resources/images/button%20download.png" />
+    <EmbeddedResource Include="resources\images\button-20activate.png" LogicalName="resources/images/button%20activate.png" />
+    <EmbeddedResource Include="icon.ico" LogicalName="icon.ico" />
+    <EmbeddedResource Include="resources\images\icon-20hide.png" LogicalName="resources/images/icon%20hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+</Project>
